@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="search.css" type="text/css">
+    <script type="text/javascript" src="search.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+</head>
+<body>
+    <div id="panel">
+        <fieldset id="login">
+            <legend><img src="/~img27">user</legend>
+            <center>fares23</center>
+        </fieldset>
+        <fieldset id="folder">
+            <legend><img src="/~img27">folder</legend>
+            <div style="float: right; position: relative; top: -1em; font-weight: bold;">
+                <a href="..">
+                    <img src="/~img27">
+                    up
+                </a>
+            </div>
+            <div id="breadcrumbs">
+                <a href="/">
+                    <img src="/~img27">
+                    Home 
+                </a>
+                <a href="/img/" style="padding-left: 1.4em;">>> img</a>
+            </div>
+            <div id="folder-stats">5 folders, 4 files, 11.0 KBytes
+            </div>
+        </fieldset>
+
+    
+    <fieldset>
+    <h1>Search </h1>
+    <form style="text-align: center">
+        <input  name="search"  size="15" value="">
+<br>
+        <input type="submit" value="Search">
+    </form>
+    <fieldset id="actions">
+        <legend><img src="/~img27">Actions</legend>
+        <center>
+            <button id="archivebtn" onclick="if (confirm("Are you sure?")) sumit({}, "/img/mode")">archive</button>
+        </center>
+        <button onclick="location = "/img/"">get list</button>
+    </fieldset>
+</fieldset>
+</div>
+<div id="files_outer">
+    <div style="height: 1.6em;"></div>
+    <form method="post">
+     <table id="files">
+      <tbody>
+        <tr>
+            <th>
+                <a href="/img/?sort=n">Name</a>
+                <a href="/img/?sort=e&rev=1">.extension</a>
+            </th>
+            <th>
+                <a href="/img/?sort=s">Size</a>
+            </th>
+            <th>
+                <a href="/img/?sort=t">Timestamp</a>
+            </th>
+            <th>
+                <a href="/img/?sort=d">Hits</a>
+            </th>
+        </tr>
+        <tr class="">
+        <td>
+            <input class="selector" type="checkbox" name="selector"
+            value="anime/" style="display: inline-block;">
+            <br>
+            <a href="anime/"><img src="/~img_folder">anime</a>
+        </td>
+        </tr>
+      </tbody>
+     </table>
+    </form>
+</div>
+</body>
+</html>
